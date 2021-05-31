@@ -130,18 +130,18 @@ public class Helper {
 	
 	public static Map<String, String> setBehavior(String[] states){
 		Map<String, String> behavior = new LinkedHashMap<>();
-		behavior.put(Month.ЯНВАРЬ.toString(), states[0]);
-		behavior.put(Month.ФЕВРАЛЬ.toString(), states[1]);
-		behavior.put(Month.МАРТ.toString(), states[2]);
-		behavior.put(Month.АПРЕЛЬ.toString(), states[3]);
-		behavior.put(Month.МАЙ.toString(), states[4]);
-		behavior.put(Month.ИЮНЬ.toString(), states[5]);
-		behavior.put(Month.ИЮЛЬ.toString(), states[6]);
-		behavior.put(Month.АВГУСТ.toString(), states[7]);
-		behavior.put(Month.СЕНТЯБРЬ.toString(), states[8]);
-		behavior.put(Month.ОКТЯБРЬ.toString(), states[9]);
-		behavior.put(Month.НОЯБРЬ.toString(), states[10]);
-		behavior.put(Month.ДЕКАБРЬ.toString(), states[11]);
+		behavior.put(MonthName.ЯНВАРЬ.toString(), states[0]);
+		behavior.put(MonthName.ФЕВРАЛЬ.toString(), states[1]);
+		behavior.put(MonthName.МАРТ.toString(), states[2]);
+		behavior.put(MonthName.АПРЕЛЬ.toString(), states[3]);
+		behavior.put(MonthName.МАЙ.toString(), states[4]);
+		behavior.put(MonthName.ИЮНЬ.toString(), states[5]);
+		behavior.put(MonthName.ИЮЛЬ.toString(), states[6]);
+		behavior.put(MonthName.АВГУСТ.toString(), states[7]);
+		behavior.put(MonthName.СЕНТЯБРЬ.toString(), states[8]);
+		behavior.put(MonthName.ОКТЯБРЬ.toString(), states[9]);
+		behavior.put(MonthName.НОЯБРЬ.toString(), states[10]);
+		behavior.put(MonthName.ДЕКАБРЬ.toString(), states[11]);
 		return behavior;
 		
 	}

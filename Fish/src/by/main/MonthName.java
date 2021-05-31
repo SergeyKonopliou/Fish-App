@@ -1,5 +1,5 @@
 package by.main;
 
-public enum Month {
+public enum MonthName {
 	 ЯНВАРЬ,ФЕВРАЛЬ,МАРТ,АПРЕЛЬ,МАЙ,ИЮНЬ,ИЮЛЬ,АВГУСТ,СЕНТЯБРЬ,ОКТЯБРЬ,НОЯБРЬ,ДЕКАБРЬ;
 }

@@ -6,7 +6,9 @@ import java.awt.Container;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.Month;
 import java.util.Date;
+import java.util.Map;
 import java.util.Properties;
 
 import javax.swing.BorderFactory;
@@ -22,9 +24,16 @@ import javax.swing.JPanel;
 import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.UtilDateModel;
 
+import by.main.Helper;
+import by.main.MonthName;
+import by.model.CatalogFish;
+import by.model.Fish;
+
 public class PanelMain {
 	private Container container;
 	private Image backgroundImage;
+	@SuppressWarnings("rawtypes")
+	CatalogFish<?> catalog = new CatalogFish();
 	
 	public void createFrame() {
 		JFrame frame = new JFrame("Fish calendar");
@@ -59,12 +68,15 @@ public class PanelMain {
 		datePanel.setBackground(new Color(25,50,250,0));
 		 
 		JButton buttonChoice = new JButton("Далее"); 
+		JButton buttonFishCatalog = new JButton("Список рыб");
 		
 //		panel.add(datePicker);
 		panel.add(datePanel); 
 		panel.add(Box.createHorizontalStrut(50));
 		panel.add(Box.createVerticalStrut(30));
 		panel.add(buttonChoice);
+		panel.add(Box.createVerticalStrut(10));
+		panel.add(buttonFishCatalog);
 		
 		
 		container.add(panel);
@@ -74,7 +86,19 @@ public class PanelMain {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Date selectedDate = (Date) model.getValue();
-				JOptionPane.showMessageDialog(null, selectedDate, "Сообщение", 1);
+				String result = selectedDate.getDate() + " " +MonthName.values()[selectedDate.getMonth()] + " " + (selectedDate.getYear() + 1900);
+				JOptionPane.showMessageDialog(null, result, "Сообщение", 1);
+				
+			}
+		});;
+		
+		buttonFishCatalog.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				catalog = Helper.createCatalogFish();
+				Map<String, Fish> fishes = catalog.getFishes();
+				JOptionPane.showMessageDialog(null, fishes.keySet(), "Имеется информация о/об", 1);
 				
 			}
 		});;

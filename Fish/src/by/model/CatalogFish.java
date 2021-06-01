@@ -49,7 +49,7 @@ public class CatalogFish<T extends Comparable<T>> {
 
 	@Override
 	public String toString() {
-		return "CatalogFish [fishes=" + fishes + "]";
+		return "CatalogFish:\n" + fishes;
 	}
 
 	

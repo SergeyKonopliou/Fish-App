@@ -98,7 +98,7 @@ public class PanelMain {
 				//получение даты
 				String result = selectedDate.getDate() + " " + MonthName.values()[selectedDate.getMonth()] + " " + (selectedDate.getYear() + 1900);
 					JOptionPane.showMessageDialog(null, "Выбранная дата: " + result, "Сообщение", 1);
-					StringBuilder str = Helper.findDate(regions,selectedDate.getDate(),selectedDate.getMonth());
+					StringBuilder str = Helper.findDate(regions,selectedDate.getDate(),selectedDate.getMonth() + 1);
 					JOptionPane.showMessageDialog(null,str.toString() , "Сообщение", 1);
 				}
 				

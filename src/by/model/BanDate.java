@@ -1,20 +1,24 @@
 package by.model;
 
+import by.main.MonthName;
+
 public class BanDate {
 	private int dayStart;
 	private int monthStart;
 	private int dayEnd;
 	private int monthEnd;
+	private String action;
 	
 	public BanDate() {
 		
 	}
 	
-	public BanDate(int dayStart,int monthStart,int dayEnd,int monthEnd) {
+	public BanDate(int dayStart,int monthStart,int dayEnd,int monthEnd,String action) {
 		this.dayStart = dayStart;
 		this.monthStart = monthStart;
 		this.dayEnd = dayEnd;
 		this.monthEnd = monthEnd;
+		this.action = action;
 	}
 
 	public int getDayStart() {
@@ -48,11 +52,20 @@ public class BanDate {
 	public void setMonthEnd(int monthEnd) {
 		this.monthEnd = monthEnd;
 	}
+	
+	public String getAction() {
+		return action;
+	}
+
+	public void setAction(String action) {
+		this.action = action;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((action == null) ? 0 : action.hashCode());
 		result = prime * result + dayEnd;
 		result = prime * result + dayStart;
 		result = prime * result + monthEnd;
@@ -69,6 +82,11 @@ public class BanDate {
 		if (getClass() != obj.getClass())
 			return false;
 		BanDate other = (BanDate) obj;
+		if (action == null) {
+			if (other.action != null)
+				return false;
+		} else if (!action.equals(other.action))
+			return false;
 		if (dayEnd != other.dayEnd)
 			return false;
 		if (dayStart != other.dayStart)
@@ -82,8 +100,8 @@ public class BanDate {
 
 	@Override
 	public String toString() {
-		return "Дата начала запрета :" + dayStart + "." + monthStart + "; Дата окончания запрета: " + dayEnd + "."
-				+ monthEnd;
+		return "Дата начала запрета :" + dayStart + " " + MonthName.values()[monthStart - 1] + "; Дата окончания запрета: " + dayEnd + " "
+				+ MonthName.values()[monthEnd - 1] + "; Запрещено: " + action;
 	}
 	
 	

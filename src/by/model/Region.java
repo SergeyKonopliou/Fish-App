@@ -1,10 +1,10 @@
 package by.model;
 
-import java.util.Map;
+import java.util.List;
 
 public class Region {
 	private String name;
-	private Map<String,BanDate> dates;
+	private List<BanDate> dates;
 	
 	public Region() {
 		
@@ -18,11 +18,11 @@ public class Region {
 		this.name = name;
 	}
 
-	public Map<String, BanDate> getDates() {
+	public List<BanDate> getDates() {
 		return dates;
 	}
 
-	public void setDates(Map<String, BanDate> dates) {
+	public void setDates(List<BanDate> dates) {
 		this.dates = dates;
 	}
 

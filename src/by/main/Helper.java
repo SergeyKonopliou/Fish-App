@@ -166,96 +166,96 @@ public class Helper {
 		List<Region> regions = new LinkedList<>();
 		Region mogilev = new Region();
 		mogilev.setName("Могилевская обл.");		
-		BanDate dateM1 = new BanDate(1, 4, 30, 5);		
-		BanDate dateM2 = new BanDate(1, 3, 15, 4);		
-		BanDate dateM3 = new BanDate(15, 4, 30, 5);		
-		BanDate dateM4 = new BanDate(31, 5, 1, 7);		
-		BanDate dateM5 = new BanDate(1, 11, 31, 3);		
-		BanDate dateM6 = new BanDate(1, 11, 15, 12);		
-		BanDate dateM7 = new BanDate(25, 12, 28, 2);		
-		BanDate dateM8 = new BanDate(25, 12, 28, 2);
+		BanDate dateM1 = new BanDate(1, 4, 30, 5,"Лов всех видов рыб");		
+		BanDate dateM2 = new BanDate(1, 3, 15, 4,"Лов щуки обыкновенной ");		
+		BanDate dateM3 = new BanDate(15, 4, 30, 5,"Лов судака ");		
+		BanDate dateM4 = new BanDate(31, 5, 1, 7,"Лов сома обыкновенного ");		
+		BanDate dateM5 = new BanDate(1, 11, 31, 3,"Лов сома обыкновенного ");		
+		BanDate dateM6 = new BanDate(1, 11, 15, 12,"Лов сига чудского");		
+		BanDate dateM7 = new BanDate(25, 12, 28, 2,"Лов налима обыкновенного");		
+		BanDate dateM8 = new BanDate(25, 12, 28, 2,"Промысловый лов всех видов рыбы на зимовальных ямах");
 		mogilev.setDates(createListDate(dateM1,dateM2,dateM3,dateM4,dateM5,dateM6,dateM7,dateM8));
 		regions.add(mogilev);
 		
 		Region brest = new Region();
 		brest.setName("Брестская обл.");		
-		BanDate dateB1 = new BanDate(20, 3, 18, 5);		
-		BanDate dateB2 = new BanDate(1, 3, 15, 4);		
-		BanDate dateB3 = new BanDate(15, 4, 30, 5);		
-		BanDate dateB4 = new BanDate(19, 5, 20, 6);		
-		BanDate dateB5 = new BanDate(1, 11, 31, 3);		
-		BanDate dateB6 = new BanDate(1, 11, 15, 12);		
-		BanDate dateB7 = new BanDate(25, 12, 28, 2);		
-		BanDate dateB8 = new BanDate(25, 12, 28, 2);
+		BanDate dateB1 = new BanDate(20, 3, 18, 5,"Лов всех видов рыб");		
+		BanDate dateB2 = new BanDate(1, 3, 15, 4,"Лов щуки обыкновенной ");		
+		BanDate dateB3 = new BanDate(15, 4, 30, 5,"Лов судака ");		
+		BanDate dateB4 = new BanDate(19, 5, 20, 6,"Лов сома обыкновенного ");		
+		BanDate dateB5 = new BanDate(1, 11, 31, 3,"Лов сома обыкновенного ");		
+		BanDate dateB6 = new BanDate(1, 11, 15, 12,"Лов сига чудского");		
+		BanDate dateB7 = new BanDate(25, 12, 28, 2,"Лов налима обыкновенного");		
+		BanDate dateB8 = new BanDate(25, 12, 28, 2,"Промысловый лов всех видов рыбы на зимовальных ямах");
 		brest.setDates(createListDate(dateB1,dateB2,dateB3,dateB4,dateB5,dateB6,dateB7,dateB8));
 		regions.add(brest);
 		
 		Region grodno = new Region();
 		grodno.setName("Гродненская обл.");		
-		BanDate dateG1 = new BanDate(1, 4, 30, 5);		
-		BanDate dateG2 = new BanDate(1, 3, 15, 4);		
-		BanDate dateG3 = new BanDate(15, 4, 30, 5);		
-		BanDate dateG4 = new BanDate(31, 5, 1, 7);		
-		BanDate dateG5 = new BanDate(1, 11, 31, 3);		
-		BanDate dateG6 = new BanDate(1, 11, 15, 12);		
-		BanDate dateG7 = new BanDate(25, 12, 28, 2);		
-		BanDate dateG8 = new BanDate(25, 12, 28, 2);
+		BanDate dateG1 = new BanDate(1, 4, 30, 5,"Лов всех видов рыб");		
+		BanDate dateG2 = new BanDate(1, 3, 15, 4,"Лов щуки обыкновенной ");		
+		BanDate dateG3 = new BanDate(15, 4, 30, 5,"Лов судака ");		
+		BanDate dateG4 = new BanDate(31, 5, 1, 7,"Лов сома обыкновенного ");		
+		BanDate dateG5 = new BanDate(1, 11, 31, 3,"Лов сома обыкновенного ");		
+		BanDate dateG6 = new BanDate(1, 11, 15, 12,"Лов сига чудского");		
+		BanDate dateG7 = new BanDate(25, 12, 28, 2,"Лов налима обыкновенного");		
+		BanDate dateG8 = new BanDate(25, 12, 28, 2,"Промысловый лов всех видов рыбы на зимовальных ямах");
 		grodno.setDates(createListDate(dateG1,dateG2,dateG3,dateG4,dateG5,dateG6,dateG7,dateG8));
 		regions.add(grodno);
 		
 		Region vitebsk = new Region();
 		vitebsk.setName("Витебская обл.");		
-		BanDate dateV1 = new BanDate(10, 4, 8, 6);		
-		BanDate dateV2 = new BanDate(9, 3, 25, 4);		
-		BanDate dateV3 = new BanDate(15, 4, 30, 5);		
-		BanDate dateV4 = new BanDate(31, 5, 1, 7);		
-		BanDate dateV5 = new BanDate(1, 11, 31, 3);		
-		BanDate dateV6 = new BanDate(1, 11, 15, 12);		
-		BanDate dateV7 = new BanDate(25, 12, 28, 2);		
-		BanDate dateV8 = new BanDate(25, 12, 28, 2);
+		BanDate dateV1 = new BanDate(10, 4, 8, 6,"Лов всех видов рыб");		
+		BanDate dateV2 = new BanDate(9, 3, 25, 4,"Лов щуки обыкновенной ");		
+		BanDate dateV3 = new BanDate(15, 4, 30, 5,"Лов судака ");		
+		BanDate dateV4 = new BanDate(31, 5, 1, 7,"Лов сома обыкновенного ");		
+		BanDate dateV5 = new BanDate(1, 11, 31, 3,"Лов сома обыкновенного ");		
+		BanDate dateV6 = new BanDate(1, 11, 15, 12,"Лов сига чудского");		
+		BanDate dateV7 = new BanDate(25, 12, 28, 2,"Лов налима обыкновенного");		
+		BanDate dateV8 = new BanDate(25, 12, 28, 2,"Промысловый лов всех видов рыбы на зимовальных ямах");
 		vitebsk.setDates(createListDate(dateV1,dateV2,dateV3,dateV4,dateV5,dateV6,dateV7,dateV8));
 		regions.add(vitebsk);
 		
 		Region gomel = new Region();
 		gomel.setName("Гомельская обл.");		
-		BanDate dateGM1 = new BanDate(20, 3, 18, 5);		
-		BanDate dateGM2 = new BanDate(1, 3, 15, 4);		
-		BanDate dateGM3 = new BanDate(15, 4, 30, 5);		
-		BanDate dateGM4 = new BanDate(19, 5, 20, 6);		
-		BanDate dateGM5 = new BanDate(1, 11, 31, 3);		
-		BanDate dateGM6 = new BanDate(1, 11, 15, 12);		
-		BanDate dateGM7 = new BanDate(25, 12, 28, 2);		
-		BanDate dateGM8 = new BanDate(25, 12, 28, 2);
+		BanDate dateGM1 = new BanDate(20, 3, 18, 5,"Лов всех видов рыб");		
+		BanDate dateGM2 = new BanDate(1, 3, 15, 4,"Лов щуки обыкновенной ");		
+		BanDate dateGM3 = new BanDate(15, 4, 30, 5,"Лов судака ");		
+		BanDate dateGM4 = new BanDate(19, 5, 20, 6,"Лов сома обыкновенного ");		
+		BanDate dateGM5 = new BanDate(1, 11, 31, 3,"Лов сома обыкновенного ");		
+		BanDate dateGM6 = new BanDate(1, 11, 15, 12,"Лов сига чудского");		
+		BanDate dateGM7 = new BanDate(25, 12, 28, 2,"Лов налима обыкновенного");		
+		BanDate dateGM8 = new BanDate(25, 12, 28, 2,"Промысловый лов всех видов рыбы на зимовальных ямах");
 		gomel.setDates(createListDate(dateGM1,dateGM2,dateGM3,dateGM4,dateGM5,dateGM6,dateGM7,dateGM8));
 		regions.add(gomel);
 		
 		Region minsk = new Region();
 		minsk.setName("Минская обл.");		
-		BanDate dateMN1 = new BanDate(20, 3, 18, 5);		
-		BanDate dateMN2 = new BanDate(1, 3, 15, 4);		
-		BanDate dateMN3 = new BanDate(15, 4, 30, 5);		
-		BanDate dateMN4 = new BanDate(19, 5, 20, 6);		
-		BanDate dateMN5 = new BanDate(1, 11, 31, 3);		
-		BanDate dateMN6 = new BanDate(1, 11, 15, 12);		
-		BanDate dateMN7 = new BanDate(25, 12, 28, 2);		
-		BanDate dateMN8 = new BanDate(25, 12, 28, 2);
+		BanDate dateMN1 = new BanDate(20, 3, 18, 5,"Лов всех видов рыб");		
+		BanDate dateMN2 = new BanDate(1, 3, 15, 4,"Лов щуки обыкновенной ");		
+		BanDate dateMN3 = new BanDate(15, 4, 30, 5,"Лов судака ");		
+		BanDate dateMN4 = new BanDate(19, 5, 20, 6,"Лов сома обыкновенного ");		
+		BanDate dateMN5 = new BanDate(1, 11, 31, 3,"Лов сома обыкновенного ");		
+		BanDate dateMN6 = new BanDate(1, 11, 15, 12,"Лов сига чудского");		
+		BanDate dateMN7 = new BanDate(25, 12, 28, 2,"Лов налима обыкновенного");		
+		BanDate dateMN8 = new BanDate(25, 12, 28, 2,"Промысловый лов всех видов рыбы на зимовальных ямах");
 		minsk.setDates(createListDate(dateMN1,dateMN2,dateMN3,dateMN4,dateMN5,dateMN6,dateMN7,dateMN8));
 		regions.add(minsk);
 		
 		return regions;
 	}
 	
-	private static Map<String, BanDate> createListDate(BanDate dateOne,BanDate dateTwo,BanDate dateThree,BanDate dateFour,
+	private static List<BanDate> createListDate(BanDate dateOne,BanDate dateTwo,BanDate dateThree,BanDate dateFour,
 			BanDate dateFive,BanDate dateSix,BanDate dateSeven,BanDate dateEight){
-		Map<String, BanDate> dates = new LinkedHashMap<>();
-		dates.put("Лов всех видов рыб", dateOne);
-		dates.put("Лов щуки обыкновенной ", dateTwo);
-		dates.put("Лов судака ", dateThree);
-		dates.put("Лов сома обыкновенного ", dateFour);
-		dates.put("Лов сома обыкновенного ", dateFive);
-		dates.put("Лов сига чудского", dateSix);
-		dates.put("Лов налима обыкновенного", dateSeven);
-		dates.put("Промысловый лов всех видов рыбы на зимовальных ямах", dateEight);
+		List<BanDate> dates = new LinkedList<>();
+		dates.add(dateOne);
+		dates.add(dateTwo);
+		dates.add(dateThree);
+		dates.add(dateFour);
+		dates.add(dateFive);
+		dates.add(dateSix);
+		dates.add(dateSeven);
+		dates.add(dateEight);
 		return dates;
 	}
 	
@@ -263,11 +263,14 @@ public class Helper {
 		StringBuilder str = new StringBuilder();
 		for (Region region : regions) {
 			str.append(region.getName()).append("\n");
-			List<BanDate> date =  (LinkedList<BanDate>) region.getDates().values();
-			for (int i = 0; i < date.size(); i++) {
-				if(day >= date.get(i).getDayStart() && month >= date.get(i).getMonthStart()) {
-					if(day <= date.get(i).getDayStart() && month <= date.get(i).getMonthStart()) {
-						str.append(region.getDates().keySet()).append("\n");
+			for (int i = 0; i < region.getDates().size(); i++) {
+				int ms = region.getDates().get(i).getMonthStart();
+				int ds = region.getDates().get(i).getDayStart();
+				if(month > ms || (month == ms &&  day >= ds) ) {
+					int me = region.getDates().get(i).getMonthEnd();
+					int de = region.getDates().get(i).getDayEnd();
+					if( month < me || (month == me && day <= de)) {
+						str.append(region.getDates().get(i)).append("\n");
 					}
 				}
 			}

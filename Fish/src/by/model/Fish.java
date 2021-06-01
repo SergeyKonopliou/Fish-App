@@ -71,7 +71,17 @@ public class Fish implements Comparable<Fish> {
 	
 	@Override
 	public String toString() {
-		return "Fish [name=" + name + ", description=" + description + ", behavior=" + behavior + "]";
+		StringBuilder str = new StringBuilder();
+		int count = 0;
+		for(Map.Entry<String, String> item : behavior.entrySet()){
+			if(count == 6) {
+				str.append("\n");
+			}
+	           str.append(item.getKey()).append(" - ");
+	           str.append(item.getValue()).append("; ");
+	           count++;
+	       }
+		return name + "\n" + description + "\n\n" + str + "\n";
 	}
 
 	@Override

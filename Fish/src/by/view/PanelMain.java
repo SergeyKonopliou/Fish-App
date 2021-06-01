@@ -6,9 +6,7 @@ import java.awt.Container;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.time.Month;
 import java.util.Date;
-import java.util.Map;
 import java.util.Properties;
 
 import javax.swing.BorderFactory;
@@ -27,13 +25,15 @@ import org.jdatepicker.impl.UtilDateModel;
 import by.main.Helper;
 import by.main.MonthName;
 import by.model.CatalogFish;
-import by.model.Fish;
 
 public class PanelMain {
 	private Container container;
 	private Image backgroundImage;
-	@SuppressWarnings("rawtypes")
-	CatalogFish<?> catalog = new CatalogFish();
+	CatalogFish<?> catalog;
+	
+	public PanelMain() {
+		catalog = Helper.createCatalogFish();
+	}
 	
 	public void createFrame() {
 		JFrame frame = new JFrame("Fish calendar");
@@ -77,7 +77,7 @@ public class PanelMain {
 		panel.add(buttonChoice);
 		panel.add(Box.createVerticalStrut(10));
 		panel.add(buttonFishCatalog);
-		
+		panel.add(Box.createVerticalStrut(10));
 		
 		container.add(panel);
 		
@@ -86,23 +86,27 @@ public class PanelMain {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Date selectedDate = (Date) model.getValue();
-				String result = selectedDate.getDate() + " " +MonthName.values()[selectedDate.getMonth()] + " " + (selectedDate.getYear() + 1900);
-				JOptionPane.showMessageDialog(null, result, "Сообщение", 1);
+				if(selectedDate != null) {
+				@SuppressWarnings("deprecation")
+				//получение даты
+				String result = selectedDate.getDate() + " " + MonthName.values()[selectedDate.getMonth()] + " " + (selectedDate.getYear() + 1900);
+					JOptionPane.showMessageDialog(null, result, "Сообщение", 1);
+				}
+				
 				
 			}
-		});;
+		});
 		
 		buttonFishCatalog.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				catalog = Helper.createCatalogFish();
-				Map<String, Fish> fishes = catalog.getFishes();
-				JOptionPane.showMessageDialog(null, fishes.keySet(), "Имеется информация о/об", 1);
-				
+				PanelChoiceFish panelChoice = new PanelChoiceFish(catalog);
+				panelChoice.createPanelChoiceFish(container);	
 			}
-		});;
+		});
 		
+
 		frame.setVisible(true);
 	}
 }

@@ -17,14 +17,16 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import org.apache.log4j.Logger;
+
 import by.model.CatalogFish;
 import by.model.Fish;
-
 
 public class PanelChoiceFish {
 	@SuppressWarnings("rawtypes")
 	CatalogFish<?> catalog = new CatalogFish();
-	
+	private final static Logger LOGGER = Logger.getLogger(PanelMain.class);
+
 	public PanelChoiceFish() {
 
 	}
@@ -32,9 +34,10 @@ public class PanelChoiceFish {
 	public PanelChoiceFish(CatalogFish<?> catalog) {
 		this.catalog = catalog;
 	}
-	
+
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public void createPanelChoiceFish(Container container) {
+		LOGGER.info("The user went to the fish selection section");
 		JFrame frame = new JFrame();
 		frame.setTitle("Выберите разновидности рыбы");
 		frame.setSize(300, 130);
@@ -44,17 +47,17 @@ public class PanelChoiceFish {
 		panel.setLayout(new GridLayout(3, 2, 5, 5));
 		panel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 		panel.setBackground(new Color(247, 247, 251, 255));
-		
-		 DefaultComboBoxModel box = new DefaultComboBoxModel();
-		 Map<String, Fish> fishes = catalog.getFishes();
-		 Set<String> name = fishes.keySet(); 
-		 for (Iterator iterator = name.iterator(); iterator.hasNext();) {
+
+		DefaultComboBoxModel box = new DefaultComboBoxModel();
+		Map<String, Fish> fishes = catalog.getFishes();
+		Set<String> name = fishes.keySet();
+		for (Iterator iterator = name.iterator(); iterator.hasNext();) {
 			String string = (String) iterator.next();
 			box.addElement(string);
 		}
-		 JComboBox combo = new JComboBox(box);
-		 combo.setMaximumRowCount(5);
-		
+		JComboBox combo = new JComboBox(box);
+		combo.setMaximumRowCount(5);
+
 		JButton ok = new JButton("Подробнее");
 		JButton cancel = new JButton("Отмена");
 		panel.add(combo);
@@ -76,7 +79,9 @@ public class PanelChoiceFish {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Map<String, Fish> fishes = catalog.getFishes();
+				// combo.getSelectedItem() - получение выбранного элемента из выпадающего списка
 				JOptionPane.showMessageDialog(null, fishes.get(combo.getSelectedItem()), "Полная информация", 1);
+				LOGGER.info("The user choose " + fishes.get(combo.getSelectedItem()).getName());
 				frame.setVisible(false);
 				container.revalidate();
 				container.repaint();
@@ -87,4 +92,3 @@ public class PanelChoiceFish {
 	}
 
 }
-

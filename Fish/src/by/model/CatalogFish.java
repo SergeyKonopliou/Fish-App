@@ -1,15 +1,14 @@
 package by.model;
 
-
 import java.util.Map;
 
 public class CatalogFish<T extends Comparable<T>> {
 	private Map<String, Fish> fishes;
-	
+
 	public CatalogFish() {
-		
+
 	}
-	
+
 	public CatalogFish(Map<String, Fish> fishes) {
 		this.fishes = fishes;
 	}
@@ -52,6 +51,4 @@ public class CatalogFish<T extends Comparable<T>> {
 		return "CatalogFish:\n" + fishes;
 	}
 
-	
-	
 }

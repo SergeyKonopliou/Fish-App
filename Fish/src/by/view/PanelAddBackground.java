@@ -1,4 +1,5 @@
 package by.view;
+
 /**
  * создание панели с задним фоном в виде переданного изображения
  */
@@ -26,6 +27,6 @@ public class PanelAddBackground extends JPanel {
 
 	public void paintComponent(Graphics g) {
 //		g.drawImage(backgroundImage, 0, 0, null);
-		 g.drawImage(backgroundImage, 0, 0, 1500, 900, null);
+		g.drawImage(backgroundImage, 0, 0, 1500, 900, null);
 	}
 }

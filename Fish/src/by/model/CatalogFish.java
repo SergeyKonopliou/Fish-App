@@ -1,8 +1,14 @@
 package by.model;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class CatalogFish<T extends Comparable<T>> {
+public class CatalogFish<T extends Comparable<T>> implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2441894342567980691L;
 	private Map<String, Fish> fishes;
 
 	public CatalogFish() {

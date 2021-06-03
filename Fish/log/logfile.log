@@ -1,0 +1,198 @@
+2021-06-02 22:02:15,116 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:02:15,223 [INFO ] FileHelper.java:readReadyFile:74 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:02:15,225 [INFO ] FileHelper.java:readReadyFile:80 - The writing stream is closed
+2021-06-02 22:02:15,226 [INFO ] PanelMain.java:createFrame:52 - Fish list created
+2021-06-02 22:02:19,995 [INFO ] PanelMain.java:stateChanged:73 - Выбранная дата: Могилевская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Брестская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гродненская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Витебская обл.
+Период запрета : 10 АПРЕЛЬ - 8 ИЮНЬ; Запрещено: Лов всех видов рыб
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гомельская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Минская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+
+2021-06-02 22:02:22,025 [INFO ] PanelMain.java:stateChanged:73 - Выбранная дата: Могилевская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Брестская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гродненская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Витебская обл.
+Период запрета : 10 АПРЕЛЬ - 8 ИЮНЬ; Запрещено: Лов всех видов рыб
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гомельская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Минская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+
+2021-06-02 22:03:06,027 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:03:06,112 [INFO ] FileHelper.java:readReadyFile:74 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:03:06,113 [INFO ] FileHelper.java:readReadyFile:80 - The writing stream is closed
+2021-06-02 22:03:06,114 [INFO ] PanelMain.java:createFrame:52 - Fish list created
+2021-06-02 22:03:11,481 [INFO ] PanelMain.java:stateChanged:73 - Выбранная дата: Могилевская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Брестская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гродненская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Витебская обл.
+Период запрета : 10 АПРЕЛЬ - 8 ИЮНЬ; Запрещено: Лов всех видов рыб
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гомельская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Минская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+
+2021-06-02 22:03:13,869 [INFO ] PanelMain.java:stateChanged:73 - Выбранная дата: Могилевская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Брестская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гродненская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Витебская обл.
+Период запрета : 10 АПРЕЛЬ - 8 ИЮНЬ; Запрещено: Лов всех видов рыб
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гомельская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Минская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+
+2021-06-02 22:03:18,920 [INFO ] PanelMain.java:stateChanged:73 - Выбранная дата: Могилевская обл.
+Запретов нет
+--------------------------------------------------------------------
+Брестская обл.
+Запретов нет
+--------------------------------------------------------------------
+Гродненская обл.
+Запретов нет
+--------------------------------------------------------------------
+Витебская обл.
+Запретов нет
+--------------------------------------------------------------------
+Гомельская обл.
+Запретов нет
+--------------------------------------------------------------------
+Минская обл.
+Запретов нет
+--------------------------------------------------------------------
+
+2021-06-02 22:04:26,755 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:04:26,845 [INFO ] FileHelper.java:readReadyFile:74 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:04:26,847 [INFO ] FileHelper.java:readReadyFile:80 - The writing stream is closed
+2021-06-02 22:04:26,847 [INFO ] PanelMain.java:createFrame:49 - Fish list created
+2021-06-02 22:04:31,378 [INFO ] PanelMain.java:actionPerformed:120 - Выбранная дата: Могилевская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Брестская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гродненская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Витебская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гомельская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Минская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+
+2021-06-02 22:22:06,995 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:22:07,045 [INFO ] FileHelper.java:writeNewFile:79 - First start application.Created new file and recording information about ban dates
+2021-06-02 22:22:07,052 [INFO ] FileHelper.java:writeNewFile:82 - The recording stream is closed
+2021-06-02 22:22:07,093 [WARN ] FileHelper.java:createListRegionFile:54 - File didn't create!!!
+2021-06-02 22:22:07,094 [INFO ] PanelMain.java:createFrame:51 - Fish list created
+2021-06-02 22:22:29,188 [INFO ] PanelChoiceFish.java:createPanelChoiceFish:40 - The user went to the fish selection section
+2021-06-02 22:22:33,973 [INFO ] PanelChoiceFish.java:actionPerformed:84 - The user choose Окунь
+2021-06-02 22:22:35,613 [INFO ] PanelChoiceFish.java:createPanelChoiceFish:40 - The user went to the fish selection section
+2021-06-02 22:22:38,489 [INFO ] PanelChoiceFish.java:actionPerformed:84 - The user choose Карась
+2021-06-02 22:22:48,193 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:22:48,247 [WARN ] FileHelper.java:readReadyFile:99 - Error when reading information about ban dates from a file!!!
+2021-06-02 22:22:48,248 [INFO ] FileHelper.java:readReadyFile:103 - The writing stream is closed
+2021-06-02 22:22:48,249 [WARN ] FileHelper.java:readReadyFileFishInfo:132 - Error while creating read stream!!!
+2021-06-02 22:22:48,249 [WARN ] FileHelper.java:readReadyFileFishInfo:138 - Error when reading information about ban dates from a file!!!
+2021-06-02 22:22:48,250 [INFO ] FileHelper.java:readReadyFileFishInfo:142 - The writing stream is closed
+2021-06-02 22:22:48,251 [INFO ] PanelMain.java:createFrame:51 - Fish list created
+2021-06-02 22:22:50,358 [INFO ] PanelChoiceFish.java:createPanelChoiceFish:40 - The user went to the fish selection section
+2021-06-02 22:25:16,685 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:25:16,739 [INFO ] FileHelper.java:readReadyFile:97 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:25:16,741 [INFO ] FileHelper.java:readReadyFile:103 - The writing stream is closed
+2021-06-02 22:25:16,757 [WARN ] FileHelper.java:readReadyFileFishInfo:138 - Error when reading information about ban dates from a file!!!
+2021-06-02 22:25:16,757 [INFO ] FileHelper.java:readReadyFileFishInfo:142 - The writing stream is closed
+2021-06-02 22:25:16,758 [INFO ] PanelMain.java:createFrame:51 - Fish list created
+2021-06-02 22:25:18,975 [INFO ] PanelChoiceFish.java:createPanelChoiceFish:40 - The user went to the fish selection section
+2021-06-02 22:28:51,245 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:28:51,294 [INFO ] FileHelper.java:writeNewFile:79 - First start application.Created new file and recording information about ban dates
+2021-06-02 22:28:51,296 [INFO ] FileHelper.java:writeNewFile:82 - The recording stream is closed
+2021-06-02 22:28:51,320 [INFO ] FileHelper.java:writeNewFileFishInfo:119 - First start application.Created new file and recording information about ban dates
+2021-06-02 22:28:51,321 [INFO ] FileHelper.java:writeNewFileFishInfo:122 - The recording stream is closed
+2021-06-02 22:28:51,321 [INFO ] PanelMain.java:createFrame:51 - Fish list created
+2021-06-02 22:28:58,695 [INFO ] PanelChoiceFish.java:createPanelChoiceFish:40 - The user went to the fish selection section
+2021-06-02 22:29:01,180 [INFO ] PanelChoiceFish.java:actionPerformed:84 - The user choose Карась
+2021-06-02 22:29:04,212 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:29:04,264 [INFO ] FileHelper.java:readReadyFile:97 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:29:04,265 [INFO ] FileHelper.java:readReadyFile:103 - The writing stream is closed
+2021-06-02 22:29:04,285 [INFO ] FileHelper.java:readReadyFileFishInfo:136 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:29:04,285 [INFO ] FileHelper.java:readReadyFileFishInfo:142 - The writing stream is closed
+2021-06-02 22:29:04,286 [INFO ] PanelMain.java:createFrame:51 - Fish list created
+2021-06-02 22:29:06,887 [INFO ] PanelChoiceFish.java:createPanelChoiceFish:40 - The user went to the fish selection section
+2021-06-02 22:29:11,551 [INFO ] PanelChoiceFish.java:actionPerformed:84 - The user choose Сиг
+2021-06-02 22:33:34,285 [INFO ] Main.java:run:15 - Application started
+2021-06-02 22:33:34,349 [INFO ] FileHelper.java:readReadyFile:97 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:33:34,355 [INFO ] FileHelper.java:readReadyFile:103 - The writing stream is closed
+2021-06-02 22:33:34,373 [INFO ] FileHelper.java:readReadyFileFishInfo:136 - Reading information about ban dates on subsequent launches of the application
+2021-06-02 22:33:34,374 [INFO ] FileHelper.java:readReadyFileFishInfo:142 - The writing stream is closed
+2021-06-02 22:33:34,374 [INFO ] PanelMain.java:createFrame:50 - Fish list created
+2021-06-02 22:33:38,196 [INFO ] PanelMain.java:actionPerformed:121 - Выбранная дата: Могилевская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Брестская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гродненская обл.
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Витебская обл.
+Период запрета : 10 АПРЕЛЬ - 8 ИЮНЬ; Запрещено: Лов всех видов рыб
+Период запрета : 31 МАЙ - 1 ИЮЛЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Гомельская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+Минская обл.
+Период запрета : 19 МАЙ - 20 ИЮНЬ; Запрещено: Лов сома обыкновенного 
+--------------------------------------------------------------------
+
+2021-06-02 22:33:40,624 [INFO ] PanelChoiceFish.java:createPanelChoiceFish:40 - The user went to the fish selection section
+2021-06-02 22:33:43,061 [INFO ] PanelChoiceFish.java:actionPerformed:84 - The user choose Карась

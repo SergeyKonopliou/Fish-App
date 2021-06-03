@@ -1,8 +1,13 @@
 package by.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Region {
+public class Region implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8081067564019435155L;
 	private String name;
 	private List<BanDate> dates;
 

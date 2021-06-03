@@ -1,9 +1,14 @@
 package by.model;
 
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class Fish implements Comparable<Fish> {
+public class Fish implements Comparable<Fish>,Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2882546690625874246L;
 	private String name;
 	private String description;
 	private Map<String, String> behavior;

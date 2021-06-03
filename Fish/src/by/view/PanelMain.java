@@ -20,13 +20,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 import org.apache.log4j.Logger;
 import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.UtilDateModel;
 
+import by.main.FileHelper;
 import by.main.Helper;
 import by.model.CatalogFish;
 import by.model.Region;
@@ -34,14 +33,18 @@ import by.model.Region;
 public class PanelMain {
 	private Container container;
 	private Image backgroundImage;
-	CatalogFish<?> catalog;
-	List<Region> regions;
+	private CatalogFish<?> catalog;
+	private List<Region> regions;
 	private final static Logger LOGGER = Logger.getLogger(PanelMain.class);
 
 	public PanelMain() {
-		catalog = Helper.createCatalogFish();
-		regions = Helper.createListRegion();
+		FileHelper helper = new FileHelper();
+		helper.createListRegionFile();
+		catalog = helper.getCatalog();
+		regions = helper.getRegions();
 	}
+
+	
 
 	public void createFrame() {
 		LOGGER.info("Fish list created");
@@ -55,21 +58,21 @@ public class PanelMain {
 		container = frame.getContentPane();
 		UtilDateModel model = new UtilDateModel();
 		Calendar calendarDay = Calendar.getInstance();
-		model.setSelected(true);//разрешение выбора даты
-		
-		model.addChangeListener(new ChangeListener() {
-			
-			@Override
-			public void stateChanged(ChangeEvent e) {
-				Date selectedDate = (Date) model.getValue();
-				calendarDay.setTime(selectedDate);
-				if (selectedDate != null ) {
-					StringBuilder str = Helper.findDate(regions, calendarDay.get(Calendar.DATE), (calendarDay.get(Calendar.MONTH) + 1));
-					LOGGER.info("Выбранная дата: " + str);
-					JOptionPane.showMessageDialog(null, str.toString(), "Сообщение", 1);
-				}
-			}
-		});
+		model.setSelected(true);// разрешение выбора даты
+
+//		model.addChangeListener(new ChangeListener() {
+//			
+//			@Override
+//			public void stateChanged(ChangeEvent e) {
+//				Date selectedDate = (Date) model.getValue();
+//				calendarDay.setTime(selectedDate);
+//				if (selectedDate != null ) {
+//					StringBuilder str = Helper.findDate(regions, calendarDay.get(Calendar.DATE), (calendarDay.get(Calendar.MONTH) + 1));
+//					LOGGER.info("Выбранная дата: " + str);
+//					JOptionPane.showMessageDialog(null, str.toString(), "Сообщение", 1);
+//				}
+//			}
+//		});
 //		model.setDate(2021, 1, 1);// установить начальную дату для компонента календаря
 		Properties p = new Properties();
 		p.put("text.today", "Сегодня");
@@ -86,42 +89,43 @@ public class PanelMain {
 //		panel.add(Box.createVerticalStrut(50));
 
 		JDatePanelImpl datePanel = new JDatePanelImpl(model, p);
-	
+
 //		JDatePickerImpl datePicker = new JDatePickerImpl(datePanel, new DateLabelFormatter());
 
 		datePanel.setBorder(BorderFactory.createEmptyBorder(10, 100, 100, 100));
 		datePanel.setBackground(new Color(25, 50, 250, 0));
 
-//		JButton buttonChoice = new JButton("Далее");
+		JButton buttonChoice = new JButton("Далее");
 		JButton buttonFishCatalog = new JButton("Список рыб");
 
 //		panel.add(datePicker);
 		panel.add(datePanel);
 		panel.add(Box.createHorizontalStrut(50));
 		panel.add(Box.createVerticalStrut(30));
-//		panel.add(buttonChoice);
-//		panel.add(Box.createVerticalStrut(10));
+		panel.add(buttonChoice);
+		panel.add(Box.createVerticalStrut(10));
 		panel.add(buttonFishCatalog);
 		panel.add(Box.createVerticalStrut(10));
 
 		container.add(panel);
 
-//		buttonChoice.addActionListener(new ActionListener() {
-//
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				Date selectedDate = (Date) model.getValue();
-//				calendarDay.setTime(selectedDate);
-//				if (selectedDate != null) {
-//					StringBuilder str = Helper.findDate(regions, calendarDay.get(Calendar.DATE), (calendarDay.get(Calendar.MONTH) + 1));
-//					LOGGER.info("Выбранная дата: " + str);
-//					JOptionPane.showMessageDialog(null, str.toString(), "Сообщение", 1);
-//				}else{
-//					LOGGER.info("Дата не выбрана");
-//					JOptionPane.showMessageDialog(null, "Дата не выбрына", "Сообщение", 2);
-//				}
-//			}
-//		});
+		buttonChoice.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Date selectedDate = (Date) model.getValue();
+				calendarDay.setTime(selectedDate);
+				if (selectedDate != null) {
+					StringBuilder str = Helper.findDate(regions, calendarDay.get(Calendar.DATE),
+							(calendarDay.get(Calendar.MONTH) + 1));
+					LOGGER.info("Выбранная дата: " + str);
+					JOptionPane.showMessageDialog(null, str.toString(), "Сообщение", 1);
+				} else {
+					LOGGER.info("Дата не выбрана");
+					JOptionPane.showMessageDialog(null, "Дата не выбрына", "Сообщение", 2);
+				}
+			}
+		});
 
 		buttonFishCatalog.addActionListener(new ActionListener() {
 

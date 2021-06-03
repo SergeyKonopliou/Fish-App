@@ -1,8 +1,15 @@
 package by.model;
 
+import java.io.Serializable;
+
 import by.main.MonthName;
 
-public class BanDate {
+public class BanDate implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6071633390154107622L;
 	private int dayStart;
 	private int monthStart;
 	private int dayEnd;

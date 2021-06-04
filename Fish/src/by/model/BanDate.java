@@ -7,7 +7,7 @@ import by.main.MonthName;
 public class BanDate implements Serializable {
 
 	/**
-	 * 
+	 * дата запрета
 	 */
 	private static final long serialVersionUID = -6071633390154107622L;
 	private int dayStart;
